@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './App.css';
 import ResponsiveAppBar from './Components/Appbar/appbar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
+import darkProfilePicture from './Components/WebsitePhoto.png';
+import lightProfilePicture from './Components/WebsitePhotoColored.png';
 
 const lightTheme = createTheme({
   palette: {
@@ -34,7 +36,7 @@ const darkTheme = createTheme({
 });
 
 function App() {
-  const [themeMode, setThemeMode] = useState<'light' | 'dark'>('light'); // Track theme mode
+  const [themeMode, setThemeMode] = useState<'light' | 'dark'>('dark'); // Track theme mode
 
   // Callback function to handle theme mode changes
   const handleThemeChange = () => {
@@ -49,8 +51,16 @@ function App() {
       <div className={`App ${themeMode}`}>
         <ResponsiveAppBar onThemeChange={handleThemeChange} themeMode={'light'} />
         <div id="TitleStatement">
-          <h1>Hi, I'm Alex.</h1>
-          <h1>Finance, Coding, Quant.</h1>
+          <div>
+            <h1>Hi, I'm Alex.</h1>
+            <h1>Finance, Coding, Quant.</h1>
+          </div>
+          <img src={themeMode === 'light' ? lightProfilePicture : darkProfilePicture}
+            alt="profilePicture" />
+        </div>
+        <div id="Introduction">
+          <p>I'm a 20-year-old college student deeply intrigued by the realm of quantitative software.</p>
+          <p> Combining my love for finance with my fascination for technology, I'm on a quest to unravel the intricacies of algorithms for finance.</p>
         </div>
       </div>
     </ThemeProvider>

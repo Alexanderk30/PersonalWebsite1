@@ -1,10 +1,12 @@
 .App.light {
   background-color: #ffffff; /* Light background color */
+  overflow-x: hidden;
 }
 
 .App.dark {
   background-color: #303030; /* Dark background color */
   height:100vh;
+  overflow-x: hidden;
 }
 /* Default text color */
 .App h1 {
@@ -15,9 +17,12 @@
 .App.dark h1 {
   color: #ffffff; /* White */
 }
+.App.dark p {
+  color: #ffffff; /* White */
+}
 /* Default background color for AppBar */
 .App .MuiAppBar-root {
-  background-color: #1976d2; /* Light theme color */
+  background-color: #56018D; /* Light theme color */
 }
 
 /* Dark theme background color for AppBar */
@@ -33,7 +38,7 @@
 
 /* Default background color for AppBar */
 .App .MuiAppBar-root {
-  background-color: #1976d2; /* Light theme color */
+  background-color: #56018D; /* Light theme color */
 }
 
 /* Dark theme background color for AppBar */
@@ -41,7 +46,72 @@
   background-color: #303030; /* Dark theme color */
 }
 #TitleStatement{
-  margin-top:10vh;
-  margin-left:20vh;
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+  align-items: center;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 25%;
+  font-size: x-large;
+}
+#TitleStatement h1 {
+  display:flex;
+  
+  margin-right: 2%; /* Add margin to create space between the header and image */
+}
+
+#TitleStatement img {
+  width: 20%; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10% 10% 10% 10%;
+}
+
+#Introduction{
+  display:flex;
+  flex-wrap: wrap;
+  margin-top: 3%;
+  margin-left:25%;
+  width:50%;
+  font-size:large;
+  line-height: 200%;
+}
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default background color for AppBar */
+.App .MuiAppBar-root {
+  background-color: #6430a0; /* Light theme color */
+}
+
+/* Dark theme background color for AppBar */
+.App.dark .MuiAppBar-root {
+  background-color: #303030; /* Dark theme color */
+}
+
+/* Animation for appearing elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to div elements */
+#TitleStatement h1 {
+  animation: fadeIn 1.5s ease-in-out;
+}
+#Introduction p {
+  animation:fadeIn 1.8s ease-in-out;
+}
+#TitleStatement img{
+  animation: fadeIn 1.8s ease-in-out;
 }
 

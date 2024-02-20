@@ -17,7 +17,7 @@ const lightTheme = createTheme({
   palette: {
     mode: 'light',
     primary: {
-      main: '#1976d2', // blue color
+      main: '#56018D', // purple color
     },
     background: {
       default: '#ffffff', // light background color
@@ -52,7 +52,7 @@ const ResponsiveAppBar: React.FC<AppBarProps> = ({ onThemeChange, themeMode }) =
         <AppBar position="static" color={themeMode === 'light' ? 'primary' : 'default'}>
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              My App
+              Home
             </Typography>
             <IconButton color="inherit" onClick={onThemeChange}>
               {themeMode === 'light' ? <Brightness4Icon /> : <Brightness7Icon />}
