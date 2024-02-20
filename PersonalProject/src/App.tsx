@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
 import ResponsiveAppBar from './Components/Appbar/appbar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
@@ -61,6 +61,12 @@ function App() {
         <div id="Introduction">
           <p>I'm a 20-year-old college student deeply intrigued by the realm of quantitative software.</p>
           <p> Combining my love for finance with my fascination for technology, I'm on a quest to unravel the intricacies of algorithms for finance.</p>
+        </div>
+        <div id = "Certifications">
+          <h1>Here are some of my certifications</h1>
+        </div>
+        <div id = "certBox1">
+          <p>sdsdd</p>
         </div>
       </div>
     </ThemeProvider>

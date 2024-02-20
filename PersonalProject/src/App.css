@@ -114,4 +114,25 @@
 #TitleStatement img{
   animation: fadeIn 1.8s ease-in-out;
 }
-
+#Certifications{
+display:flex;
+margin-top:10%;
+align-items: center;
+justify-content: center;
+}
+#Certifications h1{
+  animation: fadeIn 2s ease-in-out;
+}
+#certBox1{
+  display:flex;
+  background-color:rgb(70, 70, 70);
+  width:50%;
+  height:20%;
+  margin-top: 3%;
+  margin-left:25%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in-out;
+  
+}
