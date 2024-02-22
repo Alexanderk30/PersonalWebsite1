@@ -123,7 +123,7 @@ justify-content: center;
 #Certifications h1{
   animation: fadeIn 2s ease-in-out;
 }
-#certBox1{
+/* #certBox1{
   display:flex;
   background-color:rgb(70, 70, 70);
   width:50%;
@@ -134,5 +134,14 @@ justify-content: center;
   justify-content: center;
   border-radius: 10px;
   animation: fadeIn 2s ease-in-out;
-  
-}
+  }
+   */
+#paper{
+  display:flex;
+  width:40%;
+  height:auto;
+  margin-left:30%;
+
+
+}  
+

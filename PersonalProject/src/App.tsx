@@ -4,6 +4,8 @@ import ResponsiveAppBar from './Components/Appbar/appbar';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import darkProfilePicture from './Components/WebsitePhoto.png';
 import lightProfilePicture from './Components/WebsitePhotoColored.png';
+import Paper from '@mui/material/Paper';
+
 
 const lightTheme = createTheme({
   palette: {
@@ -65,8 +67,8 @@ function App() {
         <div id = "Certifications">
           <h1>Here are some of my certifications</h1>
         </div>
-        <div id = "certBox1">
-          <p>sdsdd</p>
+        <div id ="paper">
+          <Paper>"dssdiujdsidjisdjisdjisjdijs sidjsidjsiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"</Paper>
         </div>
       </div>
     </ThemeProvider>
