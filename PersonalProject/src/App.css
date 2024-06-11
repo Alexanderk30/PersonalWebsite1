@@ -1,39 +1,24 @@
+/* Light theme (default) */
 .App.light {
   background-color: #ffffff; /* Light background color */
   overflow-x: hidden;
 }
 
+/* Dark theme */
 .App.dark {
   background-color: #303030; /* Dark background color */
-  height:100vh;
+  height: 100vh;
   overflow-x: hidden;
 }
+
 /* Default text color */
-.App h1 {
+.App h1, .App p {
   color: #000000; /* Black */
 }
 
 /* Text color for dark theme */
-.App.dark h1 {
+.App.dark h1, .App.dark p {
   color: #ffffff; /* White */
-}
-.App.dark p {
-  color: #ffffff; /* White */
-}
-/* Default background color for AppBar */
-.App .MuiAppBar-root {
-  background-color: #56018D; /* Light theme color */
-}
-
-/* Dark theme background color for AppBar */
-.App.dark .MuiAppBar-root {
-  background-color: #303030; /* Dark theme color */
-}
-/* CSS Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 /* Default background color for AppBar */
@@ -45,51 +30,12 @@
 .App.dark .MuiAppBar-root {
   background-color: #303030; /* Dark theme color */
 }
-#TitleStatement{
-  display: flex;
-  flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
-  align-items: center;
-  width: 80%;
-  margin-top: 5%;
-  margin-left: 25%;
-  font-size: x-large;
-}
-#TitleStatement h1 {
-  display:flex;
-  
-  margin-right: 2%; /* Add margin to create space between the header and image */
-}
 
-#TitleStatement img {
-  width: 20%; /* Set the width of the image */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10% 10% 10% 10%;
-}
-
-#Introduction{
-  display:flex;
-  flex-wrap: wrap;
-  margin-top: 3%;
-  margin-left:25%;
-  width:50%;
-  font-size:large;
-  line-height: 200%;
-}
 /* CSS Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* Default background color for AppBar */
-.App .MuiAppBar-root {
-  background-color: #6430a0; /* Light theme color */
-}
-
-/* Dark theme background color for AppBar */
-.App.dark .MuiAppBar-root {
-  background-color: #303030; /* Dark theme color */
 }
 
 /* Animation for appearing elements */
@@ -104,44 +50,100 @@
   }
 }
 
-/* Apply animation to div elements */
+/* Apply animation to elements */
+#TitleStatement h1,
+#Introduction p,
+#TitleStatement img,
+#Certifications h1 {
+  animation: fadeIn ease-in-out;
+}
+
 #TitleStatement h1 {
-  animation: fadeIn 1.5s ease-in-out;
+  animation-duration: 1.5s;
 }
-#Introduction p {
-  animation:fadeIn 1.8s ease-in-out;
+
+#Introduction p,
+#TitleStatement img {
+  animation-duration: 1.8s;
 }
-#TitleStatement img{
-  animation: fadeIn 1.8s ease-in-out;
+
+#Certifications h1 {
+  animation-duration: 2s;
 }
-#Certifications{
-display:flex;
-margin-top:10%;
-align-items: center;
-justify-content: center;
+
+/* Layout styles */
+#TitleStatement {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+  align-items: center;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: 25%;
+  font-size: x-large;
 }
-#Certifications h1{
-  animation: fadeIn 2s ease-in-out;
+
+#TitleStatement h1 {
+  display: flex;
+  margin-right: 2%; /* Add margin to create space between the header and image */
 }
-/* #certBox1{
-  display:flex;
-  background-color:rgb(70, 70, 70);
-  width:50%;
-  height:20%;
+
+#TitleStatement img {
+  width: 20%; /* Set the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10%; /* Round corners */
+}
+
+#Introduction {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 3%;
-  margin-left:25%;
+  margin-left: 25%;
+  width: 50%;
+  font-size: large;
+  line-height: 200%;
+}
+
+#Certifications {
+  display: flex;
+  margin-top: 20%;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
-  animation: fadeIn 2s ease-in-out;
-  }
-   */
-#paper{
+}
+
+#paper {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 10%;
+  border-radius: 2%;
+  background-color: #5b5b5b; /* Default light theme color */
+  font-size: large;
+  line-height: 200%;
+}
+
+#certs{
   display:flex;
-  width:40%;
-  height:auto;
-  margin-left:30%;
+  width:80%;
+  margin-top: 3%;
+  
+}
+/* Dark theme adjustments */
+.App.dark #paper {
+  background-color: #4a4a4a; /* Dark theme color */
+}
 
+/* Add more elements and ensure they have both light and dark theme styles */
+.new-element {
+  /* Default (light theme) styles */
+  background-color: #f0f0f0;
+  color: #000000;
+}
 
-}  
-
+.App.dark .new-element {
+  /* Dark theme styles */
+  background-color: #4a4a4a;
+  color: #ffffff;
+}
