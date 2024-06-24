@@ -123,12 +123,46 @@
   font-size: large;
   line-height: 200%;
 }
+#projectCard {
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  justify-content:center;
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 10%;
+  border-radius: 2%;
+  background-color: #5b5b5b; /* Default light theme color */
+  font-size: large;
+  line-height: 200%;
+}
+#projectCard1 {
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  justify-content:center;
+  width: 80%;
+  margin-top: 2%;
+  margin-left: 10%;
+  border-radius: 2%;
+  background-color: #5b5b5b; /* Default light theme color */
+  font-size: large;
+  line-height: 200%;
+}
 
 #certs{
   display:flex;
   width:80%;
   margin-top: 3%;
   
+}
+#projects{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+
 }
 /* Dark theme adjustments */
 .App.dark #paper {
