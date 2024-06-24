@@ -84,7 +84,7 @@ function App() {
           <p style={{ color: theme.palette.text.primary }}>- Designed and developed a comprehensive MCAT study schedule creator allowing students preparing for the Medical College Admissions Test to create an easy to use and personalized plan in which they could use to study.</p>
           <p style={{ color: theme.palette.text.primary }}>- Utilized React framework with TypeScript for the front-end development, ensuring a user-friendly interface with dynamic and responsive elements.</p>
           <p style={{ color: theme.palette.text.primary }}>- Implemented CSS for styling, enhancing the visual appeal and usability of the website</p>
-          <p style={{ color: theme.palette.text.primary }}>- github.link</p>
+          <p style={{ color: theme.palette.text.primary }}>- https://github.com/Alexanderk30/mcat-website</p>
         </Paper>
         <Paper id="projectCard1" elevation={3} style={{ padding: '20px', backgroundColor: theme.palette.background.default }}>
         <h2 style={{ color: theme.palette.text.primary }}>
@@ -96,7 +96,7 @@ function App() {
           <p style={{ color: theme.palette.text.primary }}>- Integrated Plotly to generate and display interactive graphs of stock data within the web application.</p>
           <p style={{ color: theme.palette.text.primary }}>- Employed Pandas for data preprocessing, including handling missing values and scaling features with StandardScaler.</p>
           <p style={{ color: theme.palette.text.primary }}>- Created RESTful API endpoints to handle data input and return predictions in real-time.</p>
-          <p style={{ color: theme.palette.text.primary }}>- github.link</p>
+          <p style={{ color: theme.palette.text.primary }}>- https://github.com/Alexanderk30/Stock-Trading-AI</p>
         </Paper>
       </div>
     </ThemeProvider>
