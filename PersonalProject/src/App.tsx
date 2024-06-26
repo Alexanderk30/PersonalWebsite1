@@ -63,10 +63,10 @@ function App() {
           <p>I'm a 20-year-old college student deeply intrigued by the realm of Machine Learning.</p>
           <p> Combining my love for finance with my fascination for technology, I'm on a quest to unravel the usage of machine learning for finance.</p>
         </div>
-        <div id="Certifications">
+        {/* <div id="Certifications">
           <h1>Here are some of my certifications</h1>
-        </div>
-        <Paper id="paper" elevation={3} style={{ padding: '20px', backgroundColor: theme.palette.background.default }}>
+        </div> */}
+        {/* <Paper id="paper" elevation={3} style={{ padding: '20px', backgroundColor: theme.palette.background.default }}>
           <p style={{ color: theme.palette.text.primary }}>
             I am committed to continuously expanding my knowledge and skills in software and AI to stay at the forefront of technological innovation.
           </p>
@@ -74,13 +74,12 @@ function App() {
           <img src={themeMode === 'light' ? AWScert : AWScert} alt="AWScertImage" />
           <img src={themeMode === 'light' ? SolutionsCert : SolutionsCert} alt="AWScertImage" />
           </div>
-        </Paper>
+        </Paper> */}
         <div id= "projects"><h1>Projects</h1></div>
         <Paper id="projectCard" elevation={3} style={{ padding: '20px', backgroundColor: theme.palette.background.default }}>
         <h2 style={{ color: theme.palette.text.primary }}>
           Medical College Admissions Test (MCAT) Study Planner. (December 2023 - May 2024)</h2>
           <p style={{ color: theme.palette.text.primary }}> Solo Developer | React, HTML, CSS, Typescript</p>
-          <p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
           <p style={{ color: theme.palette.text.primary }}>- Designed and developed a comprehensive MCAT study schedule creator allowing students preparing for the Medical College Admissions Test to create an easy to use and personalized plan in which they could use to study.</p>
           <p style={{ color: theme.palette.text.primary }}>- Utilized React framework with TypeScript for the front-end development, ensuring a user-friendly interface with dynamic and responsive elements.</p>
           <p style={{ color: theme.palette.text.primary }}>- Implemented CSS for styling, enhancing the visual appeal and usability of the website</p>
@@ -90,7 +89,6 @@ function App() {
         <h2 style={{ color: theme.palette.text.primary }}>
           Stock Price Prediction Machine Learning Model. (May 2024 - June 2024)</h2>
           <p style={{ color: theme.palette.text.primary }}> Solo Developer | Python, Flask, Pandas, scikit-learn, plotly, HTML, CSS, JavaScript, Jinja2</p>
-          <p>--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- </p>
           <p style={{ color: theme.palette.text.primary }}>- Developed a machine learning-based web application for predicting stock prices using historical data. The application enables users to input stock data and receive predictions, along with a visual representation of the data.</p>
           <p style={{ color: theme.palette.text.primary }}>- Utilized scikit-learn to train a linear regression model for stock price prediction based on historical stock data (Open, High, Low, Close, Volume).</p>
           <p style={{ color: theme.palette.text.primary }}>- Integrated Plotly to generate and display interactive graphs of stock data within the web application.</p>
